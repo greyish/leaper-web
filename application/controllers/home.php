@@ -5,9 +5,10 @@ class Home extends MY_Controller {
 		parent::__construct();
 	}
 	public function index() {
-		echo 'test';die;
-		$this->load->view('welcome_message');
+		global $data;
+		$data['meta_desc'] 	= "Dash Board";
+		$data['title'] 		= "Dash Board";
+		$data['layout']		= "common/dashboard";
+		$this->load->view("container",$data);
 	}
 }
-/* End of file home.php */
-/* Location: ./application/controllers/home.php */
