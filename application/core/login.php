@@ -7,9 +7,9 @@ class MY_Controller extends CI_Controller {
 		if(!isset($user_id)) {
 			redirect('login');die;
 		}
-		/*global $data;
+		global $data;
 		$data['user_name'] 	= $this->session->userdata('user_name');
-		$data['user_email'] = $this->session->userdata('user_email');*/
+		$data['user_email'] = $this->session->userdata('user_email');
 	}
 }
 /* End of file MY_Controller.php */
