@@ -1,4 +1,4 @@
-<?php $BASEURL='../assets/'; ?>
+<?php $BASEURL='assets/'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
