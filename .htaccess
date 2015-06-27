@@ -1,5 +1,5 @@
 RewriteEngine on
-RewriteBase /angelhack/leaper-web/
+RewriteBase /leaper-web/
 
 RewriteCond $1 !^(index\.php|resources|demo1|robots\.txt)
 RewriteCond %{REQUEST_FILENAME} !-f
