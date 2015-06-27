@@ -2,12 +2,23 @@
 
 class Leaper_api {
 	public function __construct() {
-	}
+		$this->endpoint = "http://leaper-core.herokuapp.com/";
+		//$this->token 	= "e529c32c01bdf05952ddb185f69170d8";
+	}	
 	public function callAPI($url,$params) {
 		$ch = curl_init();
-		curl_setopt($ch,CURL_SETOPT_URL,$url);
-		curl_setopt($ch,CURL_SETOPT_POSTFIELDS,$url);
-
+		curl_setopt($ch,CURLOPT_URL,$this->endpoint.$url);
+		curl_setopt($ch,CURLOPT_RETURNTRANSFER,'1');
+		curl_setopt($ch,CURLOPT_POST,'1');
+		curl_setopt($ch,CURLOPT_CONNECTTIMEOUT,'0');
+		curl_setopt($ch,CURLOPT_POSTFIELDS,$params);
+		$res 	= curl_exec($ch);
+		$error 	= curl_error($ch);
+		curl_close($ch);
+		if(empty($error)) {
+			return json_decode($res,true);
+		}
+		return 0;
 	}
 }
 /* End of file common_lib.php */

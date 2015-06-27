@@ -1,6 +1,6 @@
 <?php 
-	$this->load->view('header');
-	$this->load->view('left_panel');
+	$this->load->view('common/header');
+	$this->load->view('common/sidebar');
 	$this->load->view($layout);
-	$this->load->view('footer');
+	$this->load->view('common/footer');
 ?>

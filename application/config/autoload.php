@@ -52,7 +52,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('session','common_lib');
+$autoload['libraries'] = array('session','common_lib','form_validation','leaper_api');
 
 
 /*
