@@ -16,7 +16,9 @@ class Leaper_api {
 		$error 	= curl_error($ch);
 		curl_close($ch);
 		if(empty($error)) {
-			return json_decode($res,true);
+			if($res!="") {
+				return json_decode($res,true);
+			}
 		}
 		return 0;
 	}

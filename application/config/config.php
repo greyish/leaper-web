@@ -16,7 +16,9 @@
 | environments.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = 'http://localhost/leaper-web/';
+$config['css_url'] = 'http://localhost/leaper-web/assets/css/';
+$config['js_url'] = 'http://localhost/leaper-web/assets/js/';
 
 /*
 |--------------------------------------------------------------------------
