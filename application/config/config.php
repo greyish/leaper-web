@@ -251,7 +251,7 @@ $config['encryption_key'] = 'Le@p@r';
 $config['sess_cookie_name']		= 'ci_session';
 $config['sess_expiration']		= 7200;
 $config['sess_expire_on_close']	= FALSE;
-$config['sess_encrypt_cookie']	= FALSE;
+$config['sess_encrypt_cookie']	= false;
 $config['sess_use_database']	= FALSE;
 $config['sess_table_name']		= 'ci_sessions';
 $config['sess_match_ip']		= FALSE;
@@ -269,10 +269,10 @@ $config['sess_time_to_update']	= 300;
 | 'cookie_secure' =  Cookies will only be set if a secure HTTPS connection exists.
 |
 */
-$config['cookie_prefix']	= "";
+$config['cookie_prefix']	= "MY_";
 $config['cookie_domain']	= "";
 $config['cookie_path']		= "/";
-$config['cookie_secure']	= FALSE;
+$config['cookie_secure']	= false;
 
 /*
 |--------------------------------------------------------------------------

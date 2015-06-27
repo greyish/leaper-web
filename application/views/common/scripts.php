@@ -1,10 +1,8 @@
 <script src="<?php echo $this->config->item('js_url'); ?>jquery.min.js"></script>
 <script src="<?php echo $this->config->item('js_url'); ?>bootstrap.min.js"></script>
-<script src="<?php echo $this->config->item('js_url'); ?>metisMenu.min.js"></script>
 <script src="<?php echo $this->config->item('js_url'); ?>raphael-min.js"></script>
 <script type="text/javascript">
 $(function() {
-	$('#side-menu').metisMenu();
     $(window).bind("load resize", function() {
         topOffset = 50;
         width = (this.window.innerWidth > 0) ? this.window.innerWidth : this.screen.width;
@@ -22,13 +20,5 @@ $(function() {
             $("#page-wrapper").css("min-height", (height) + "px");
         }
     });
-
-    var url = window.location;
-    var element = $('ul.nav a').filter(function() {
-        return this.href == url || url.href.indexOf(this.href) == 0;
-    }).addClass('active').parent().parent().addClass('in').parent();
-    if (element.is('li')) {
-        element.addClass('active');
-    }
 });
 </script>

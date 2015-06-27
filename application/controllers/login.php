@@ -4,9 +4,12 @@ class Login extends CI_Controller {
 	public function __construct() {
 		parent::__construct();		
 		global $data;
-		$data['alert_shown'] = "none";
 	}
-	public function index() {
+	public function index() {		
+		$user_id = $this->session->userdata('user_id');
+		if(!empty($user_id)) {
+			redirect('');die;
+		}
 		global $data;
 		$data['meta_desc'] 	= "Login Page";
 		$data['title'] 		= "Login Page";
@@ -35,5 +38,9 @@ class Login extends CI_Controller {
 		} else {
 			$this->load->view($data['layout'],$data);
 		}
+	}
+	public function logout() {
+		$this->session->sess_destroy();
+		redirect('');die;
 	}
 }

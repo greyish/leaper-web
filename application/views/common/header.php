@@ -39,7 +39,7 @@
                         <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+                        <li><a href="login/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
                     </ul>
                 </li>
             </ul>

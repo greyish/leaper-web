@@ -8,6 +8,7 @@ class Home extends MY_Controller {
 		global $data;
 		$data['meta_desc'] 	= "Dash Board";
 		$data['title'] 		= "Dash Board";
+		$data['page_type']	= "dashboard";
 		$data['layout']		= "common/dashboard";
 		$this->load->view("container",$data);
 	}
