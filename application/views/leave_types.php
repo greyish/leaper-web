@@ -55,7 +55,7 @@
                                     <?php foreach($result as $k=>$v) { 
                                         echo '<tr>
                                             <td>'.($k+1).'</td>
-                                            <td>'.$v['name'].'</td>
+                                            <td>'.$v['nam'].'</td>
                                             <td>'.$v['quota'].'</td>
                                         </tr>';
                                     } ?>
